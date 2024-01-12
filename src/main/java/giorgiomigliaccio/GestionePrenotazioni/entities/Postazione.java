@@ -25,6 +25,12 @@ public class Postazione {
     private int numeroMassimoOccupanti;
 
 
+    //CREO LA RELAZIONE CON LE ALTRE CLASSI:
+    @ManyToOne
+    @JoinColumn(name= "edificio_id")
+    private Edificio edificio;
+
+
     public Postazione(String codiceUnivoco,String descrizione, int numeroMassimoOccupanti, TipoPostazione  tipo ) {
         this.codiceUnivoco = codiceUnivoco;
         this.descrizione = descrizione;
