@@ -9,24 +9,23 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
-public class Edificio {
+public class Utente {
     @Id
     @GeneratedValue
+
     private Long id;
-    private String nome;
-    private String indirizzo;
+    private String username;
+    private String nomeCompleto;
+    private String email;
 
-    private String città;
-
-    public Edificio(String nome, String indirizzo,String città) {
-        this.nome = nome;
-        this.indirizzo= indirizzo;
-        this.città= città;
+    public Utente(String username,String nomeCompleto,String email ) {
+        this.username = username;
+        this.nomeCompleto= nomeCompleto;
+        this.email=email;
     }
 }

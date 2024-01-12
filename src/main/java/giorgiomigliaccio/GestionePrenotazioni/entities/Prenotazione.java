@@ -9,24 +9,21 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.time.LocalDate;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
-public class Edificio {
+public class Prenotazione {
     @Id
     @GeneratedValue
+
     private Long id;
-    private String nome;
-    private String indirizzo;
+    private LocalDate dataPrenotazione;
 
-    private String città;
-
-    public Edificio(String nome, String indirizzo,String città) {
-        this.nome = nome;
-        this.indirizzo= indirizzo;
-        this.città= città;
+    public Prenotazione(LocalDate dataPrenotazione) {
+        this.dataPrenotazione = dataPrenotazione;
     }
 }
