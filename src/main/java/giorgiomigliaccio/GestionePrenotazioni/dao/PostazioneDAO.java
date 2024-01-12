@@ -13,4 +13,6 @@ public interface PostazioneDAO extends JpaRepository<Postazione, Long> {
     List<Postazione> findByTipoAndEdificio_Citta(TipoPostazione tipo, String citta);
     List<Postazione> findByDescrizioneContainingIgnoreCase(String keyword);
     List<Postazione> findByEdificio_Citta(String citta);
+
+    List<Postazione> trovaPostazioniPerTipoECitta(TipoPostazione tipo, String citta);
 }

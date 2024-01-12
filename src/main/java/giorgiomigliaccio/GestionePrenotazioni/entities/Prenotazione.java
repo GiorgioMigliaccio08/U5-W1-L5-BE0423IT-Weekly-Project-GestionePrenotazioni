@@ -31,7 +31,11 @@ public class Prenotazione {
     @JoinColumn(name = "utente_id")
     private Utente utente;
 
-    public Prenotazione(LocalDate dataPrenotazione) {
+    public LocalDate getDataPrenotazione() {
+        return dataPrenotazione;
+    }
+
+    public void setDataPrenotazione(LocalDate dataPrenotazione) {
         this.dataPrenotazione = dataPrenotazione;
     }
 }
