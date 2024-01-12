@@ -68,15 +68,15 @@ public class Runner implements CommandLineRunner {
 
         System.out.println("-------------------- FIND BY ID ----------------------");
         try {
-           // System.out.println(utenteService.findById(1));
-          //  System.out.println(utenteService.findById(24));
+          //  System.out.println(utenteService.findById(1));
+          //  System.out.println(utenteService.findById(3));
         } catch (Exception ex) {
             System.err.println(ex.getMessage());
         }
 
         System.out.println("-------------------- FIND BY ID AND DELETE ----------------------");
         try {
-          //  utenteService.findByIdAndDelete(3);
+           // utenteService.findByIdAndDelete(3);
         } catch (Exception ex) {
             System.err.println(ex.getMessage());
         }
